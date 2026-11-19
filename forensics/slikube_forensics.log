@@ -61,3 +61,306 @@
 2026-11-18 19:44:22,206 | INFO | pid=17632 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS\absent.default1.yaml
 2026-11-18 19:44:22,208 | INFO | pid=17632 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS\absent.default1.yaml
 2026-11-18 19:44:22,208 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:47:57,577 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/empty.yml
+2026-11-18 19:47:57,600 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/empty.yml
+2026-11-18 19:47:57,613 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/empty.yml
+2026-11-18 19:47:57,613 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 6 YAML document(s) from TEST_ARTIFACTS/empty.yml
+2026-11-18 19:47:57,613 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/multi.doc.yaml
+2026-11-18 19:47:57,625 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/multi.doc.yaml
+2026-11-18 19:47:57,635 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/multi.doc.yaml
+2026-11-18 19:47:57,635 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 2 YAML document(s) from TEST_ARTIFACTS/multi.doc.yaml
+2026-11-18 19:47:57,635 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/empty.yml
+2026-11-18 19:47:57,648 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/empty.yml
+2026-11-18 19:47:57,661 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/empty.yml
+2026-11-18 19:47:57,662 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 6 YAML document(s) from TEST_ARTIFACTS/empty.yml
+2026-11-18 19:47:57,662 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/nginx.deployment.result.yaml
+2026-11-18 19:47:57,677 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/nginx.deployment.result.yaml
+2026-11-18 19:47:57,684 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/nginx.deployment.result.yaml
+2026-11-18 19:47:57,685 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/nginx.deployment.result.yaml
+2026-11-18 19:47:57,685 | INFO | pid=26116 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=True for TEST_ARTIFACTS/nginx.deployment.result.yaml (68 keys)
+2026-11-18 19:47:57,685 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/bootstrap.debian.yaml
+2026-11-18 19:47:57,695 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/bootstrap.debian.yaml
+2026-11-18 19:47:57,703 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/bootstrap.debian.yaml
+2026-11-18 19:47:57,703 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/bootstrap.debian.yaml
+2026-11-18 19:47:57,703 | INFO | pid=26116 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/bootstrap.debian.yaml (7 keys)
+2026-11-18 19:47:57,703 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/githooks.yaml
+2026-11-18 19:47:57,806 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/githooks.yaml
+2026-11-18 19:47:57,899 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/githooks.yaml
+2026-11-18 19:47:57,901 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/githooks.yaml
+2026-11-18 19:47:57,903 | INFO | pid=26116 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/githooks.yaml (646 keys)
+2026-11-18 19:47:57,903 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/start_vault_temp.yaml
+2026-11-18 19:47:57,909 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/start_vault_temp.yaml
+2026-11-18 19:47:57,914 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/start_vault_temp.yaml
+2026-11-18 19:47:57,914 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/start_vault_temp.yaml
+2026-11-18 19:47:57,914 | INFO | pid=26116 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/start_vault_temp.yaml (4 keys)
+2026-11-18 19:47:57,914 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/list.k8s.yml
+2026-11-18 19:47:57,948 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/list.k8s.yml
+2026-11-18 19:47:57,975 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/list.k8s.yml
+2026-11-18 19:47:57,976 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/list.k8s.yml
+2026-11-18 19:47:57,977 | INFO | pid=26116 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/list.k8s.yml (173 keys)
+2026-11-18 19:47:57,977 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/tasks.main.yml
+2026-11-18 19:47:57,986 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/tasks.main.yml
+2026-11-18 19:47:57,994 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/tasks.main.yml
+2026-11-18 19:47:57,994 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/tasks.main.yml
+2026-11-18 19:47:57,994 | INFO | pid=26116 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/tasks.main.yml (3 keys)
+2026-11-18 19:47:57,994 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/cluster.svc.v.yaml
+2026-11-18 19:47:58,077 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/cluster.svc.v.yaml
+2026-11-18 19:47:58,148 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/cluster.svc.v.yaml
+2026-11-18 19:47:58,151 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/cluster.svc.v.yaml
+2026-11-18 19:47:58,152 | INFO | pid=26116 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/cluster.svc.v.yaml (172 keys)
+2026-11-18 19:47:58,152 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/reso.app.yml
+2026-11-18 19:47:58,157 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/reso.app.yml
+2026-11-18 19:47:58,159 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/reso.app.yml
+2026-11-18 19:47:58,159 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/reso.app.yml
+2026-11-18 19:47:58,159 | INFO | pid=26116 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/reso.app.yml (18 keys)
+2026-11-18 19:47:58,160 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/no.kind.yaml
+2026-11-18 19:47:58,180 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/no.kind.yaml
+2026-11-18 19:47:58,200 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/no.kind.yaml
+2026-11-18 19:47:58,201 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/no.kind.yaml
+2026-11-18 19:47:58,201 | INFO | pid=26116 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/no.kind.yaml (155 keys)
+2026-11-18 19:47:58,202 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,229 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,255 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,256 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,256 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,282 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,307 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,308 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,308 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,334 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,360 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,361 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,362 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,388 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,414 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,415 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,415 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,441 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,467 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,468 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,468 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,494 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,520 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,521 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,522 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,548 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,573 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,574 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,575 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,601 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,626 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,627 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,627 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,654 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,679 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,680 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,681 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,707 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,731 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,732 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,732 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,756 | INFO | pid=26116 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,779 | INFO | pid=26116 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:47:58,780 | INFO | pid=26116 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:16,899 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/empty.yml
+2026-11-18 19:48:16,915 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/empty.yml
+2026-11-18 19:48:16,929 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/empty.yml
+2026-11-18 19:48:16,930 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 6 YAML document(s) from TEST_ARTIFACTS/empty.yml
+2026-11-18 19:48:16,930 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/multi.doc.yaml
+2026-11-18 19:48:16,941 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/multi.doc.yaml
+2026-11-18 19:48:16,952 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/multi.doc.yaml
+2026-11-18 19:48:16,953 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 2 YAML document(s) from TEST_ARTIFACTS/multi.doc.yaml
+2026-11-18 19:48:16,953 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/empty.yml
+2026-11-18 19:48:16,967 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/empty.yml
+2026-11-18 19:48:16,981 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/empty.yml
+2026-11-18 19:48:16,982 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 6 YAML document(s) from TEST_ARTIFACTS/empty.yml
+2026-11-18 19:48:16,982 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/nginx.deployment.result.yaml
+2026-11-18 19:48:16,991 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/nginx.deployment.result.yaml
+2026-11-18 19:48:16,999 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/nginx.deployment.result.yaml
+2026-11-18 19:48:17,000 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/nginx.deployment.result.yaml
+2026-11-18 19:48:17,000 | INFO | pid=22624 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=True for TEST_ARTIFACTS/nginx.deployment.result.yaml (68 keys)
+2026-11-18 19:48:17,000 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/bootstrap.debian.yaml
+2026-11-18 19:48:17,009 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/bootstrap.debian.yaml
+2026-11-18 19:48:17,019 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/bootstrap.debian.yaml
+2026-11-18 19:48:17,019 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/bootstrap.debian.yaml
+2026-11-18 19:48:17,019 | INFO | pid=22624 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/bootstrap.debian.yaml (7 keys)
+2026-11-18 19:48:17,019 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/githooks.yaml
+2026-11-18 19:48:17,122 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/githooks.yaml
+2026-11-18 19:48:17,220 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/githooks.yaml
+2026-11-18 19:48:17,223 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/githooks.yaml
+2026-11-18 19:48:17,224 | INFO | pid=22624 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/githooks.yaml (646 keys)
+2026-11-18 19:48:17,224 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/start_vault_temp.yaml
+2026-11-18 19:48:17,229 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/start_vault_temp.yaml
+2026-11-18 19:48:17,233 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/start_vault_temp.yaml
+2026-11-18 19:48:17,233 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/start_vault_temp.yaml
+2026-11-18 19:48:17,233 | INFO | pid=22624 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/start_vault_temp.yaml (4 keys)
+2026-11-18 19:48:17,234 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/list.k8s.yml
+2026-11-18 19:48:17,260 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/list.k8s.yml
+2026-11-18 19:48:17,287 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/list.k8s.yml
+2026-11-18 19:48:17,288 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/list.k8s.yml
+2026-11-18 19:48:17,288 | INFO | pid=22624 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/list.k8s.yml (173 keys)
+2026-11-18 19:48:17,289 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/tasks.main.yml
+2026-11-18 19:48:17,296 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/tasks.main.yml
+2026-11-18 19:48:17,304 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/tasks.main.yml
+2026-11-18 19:48:17,304 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/tasks.main.yml
+2026-11-18 19:48:17,304 | INFO | pid=22624 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/tasks.main.yml (3 keys)
+2026-11-18 19:48:17,305 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/cluster.svc.v.yaml
+2026-11-18 19:48:17,375 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/cluster.svc.v.yaml
+2026-11-18 19:48:17,439 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/cluster.svc.v.yaml
+2026-11-18 19:48:17,442 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/cluster.svc.v.yaml
+2026-11-18 19:48:17,443 | INFO | pid=22624 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/cluster.svc.v.yaml (172 keys)
+2026-11-18 19:48:17,443 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/reso.app.yml
+2026-11-18 19:48:17,446 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/reso.app.yml
+2026-11-18 19:48:17,448 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/reso.app.yml
+2026-11-18 19:48:17,448 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/reso.app.yml
+2026-11-18 19:48:17,448 | INFO | pid=22624 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/reso.app.yml (18 keys)
+2026-11-18 19:48:17,449 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/no.kind.yaml
+2026-11-18 19:48:17,469 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/no.kind.yaml
+2026-11-18 19:48:17,489 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/no.kind.yaml
+2026-11-18 19:48:17,490 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/no.kind.yaml
+2026-11-18 19:48:17,490 | INFO | pid=22624 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/no.kind.yaml (155 keys)
+2026-11-18 19:48:17,490 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,516 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,542 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,543 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,543 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,569 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,594 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,595 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,595 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,622 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,647 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,648 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,648 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,674 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,699 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,700 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,700 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,726 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,751 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,752 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,753 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,779 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,805 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,806 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,806 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,832 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,857 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,858 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,859 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,885 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,911 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,912 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,912 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,938 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,963 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,964 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,964 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:17,989 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:18,015 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:18,016 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:18,016 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:18,042 | INFO | pid=22624 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:18,067 | INFO | pid=22624 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:48:18,068 | INFO | pid=22624 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:30,172 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/empty.yml
+2026-11-18 19:49:30,190 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/empty.yml
+2026-11-18 19:49:30,206 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/empty.yml
+2026-11-18 19:49:30,207 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 6 YAML document(s) from TEST_ARTIFACTS/empty.yml
+2026-11-18 19:49:30,207 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/multi.doc.yaml
+2026-11-18 19:49:30,220 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/multi.doc.yaml
+2026-11-18 19:49:30,232 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/multi.doc.yaml
+2026-11-18 19:49:30,232 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 2 YAML document(s) from TEST_ARTIFACTS/multi.doc.yaml
+2026-11-18 19:49:30,232 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/empty.yml
+2026-11-18 19:49:30,248 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/empty.yml
+2026-11-18 19:49:30,263 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/empty.yml
+2026-11-18 19:49:30,263 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 6 YAML document(s) from TEST_ARTIFACTS/empty.yml
+2026-11-18 19:49:30,263 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/nginx.deployment.result.yaml
+2026-11-18 19:49:30,273 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/nginx.deployment.result.yaml
+2026-11-18 19:49:30,283 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/nginx.deployment.result.yaml
+2026-11-18 19:49:30,284 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/nginx.deployment.result.yaml
+2026-11-18 19:49:30,284 | INFO | pid=15784 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=True for TEST_ARTIFACTS/nginx.deployment.result.yaml (68 keys)
+2026-11-18 19:49:30,284 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/bootstrap.debian.yaml
+2026-11-18 19:49:30,294 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/bootstrap.debian.yaml
+2026-11-18 19:49:30,304 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/bootstrap.debian.yaml
+2026-11-18 19:49:30,304 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/bootstrap.debian.yaml
+2026-11-18 19:49:30,304 | INFO | pid=15784 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/bootstrap.debian.yaml (7 keys)
+2026-11-18 19:49:30,304 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/githooks.yaml
+2026-11-18 19:49:30,413 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/githooks.yaml
+2026-11-18 19:49:30,532 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/githooks.yaml
+2026-11-18 19:49:30,535 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/githooks.yaml
+2026-11-18 19:49:30,536 | INFO | pid=15784 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/githooks.yaml (646 keys)
+2026-11-18 19:49:30,537 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/start_vault_temp.yaml
+2026-11-18 19:49:30,543 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/start_vault_temp.yaml
+2026-11-18 19:49:30,549 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/start_vault_temp.yaml
+2026-11-18 19:49:30,549 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/start_vault_temp.yaml
+2026-11-18 19:49:30,549 | INFO | pid=15784 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/start_vault_temp.yaml (4 keys)
+2026-11-18 19:49:30,549 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/list.k8s.yml
+2026-11-18 19:49:30,581 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/list.k8s.yml
+2026-11-18 19:49:30,612 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/list.k8s.yml
+2026-11-18 19:49:30,613 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/list.k8s.yml
+2026-11-18 19:49:30,614 | INFO | pid=15784 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/list.k8s.yml (173 keys)
+2026-11-18 19:49:30,614 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/tasks.main.yml
+2026-11-18 19:49:30,622 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/tasks.main.yml
+2026-11-18 19:49:30,629 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/tasks.main.yml
+2026-11-18 19:49:30,629 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/tasks.main.yml
+2026-11-18 19:49:30,629 | INFO | pid=15784 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/tasks.main.yml (3 keys)
+2026-11-18 19:49:30,629 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/cluster.svc.v.yaml
+2026-11-18 19:49:30,700 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/cluster.svc.v.yaml
+2026-11-18 19:49:30,765 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/cluster.svc.v.yaml
+2026-11-18 19:49:30,767 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/cluster.svc.v.yaml
+2026-11-18 19:49:30,768 | INFO | pid=15784 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/cluster.svc.v.yaml (172 keys)
+2026-11-18 19:49:30,769 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/reso.app.yml
+2026-11-18 19:49:30,771 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/reso.app.yml
+2026-11-18 19:49:30,774 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/reso.app.yml
+2026-11-18 19:49:30,774 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/reso.app.yml
+2026-11-18 19:49:30,774 | INFO | pid=15784 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/reso.app.yml (18 keys)
+2026-11-18 19:49:30,774 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/no.kind.yaml
+2026-11-18 19:49:30,793 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/no.kind.yaml
+2026-11-18 19:49:30,813 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/no.kind.yaml
+2026-11-18 19:49:30,814 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/no.kind.yaml
+2026-11-18 19:49:30,814 | INFO | pid=15784 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=False for TEST_ARTIFACTS/no.kind.yaml (155 keys)
+2026-11-18 19:49:30,814 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:30,839 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:30,862 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:30,863 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:30,864 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:30,888 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:30,911 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:30,912 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:30,912 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:30,938 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:30,962 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:30,963 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:30,964 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:30,990 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,016 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,017 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,017 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,043 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,069 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,070 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,070 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,096 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,123 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,124 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,125 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,152 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,179 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,180 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,180 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,208 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,235 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,236 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,236 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,263 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,289 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,290 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,290 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,316 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,342 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,343 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,343 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,369 | INFO | pid=15784 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,395 | INFO | pid=15784 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml
+2026-11-18 19:49:31,396 | INFO | pid=15784 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS/dataimage.airflowimage.manifests.deployment.yaml

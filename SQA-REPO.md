@@ -30,6 +30,8 @@
 Other defects found while setting up:
 - `main.py` used `typer` and `Path` without importing them, so the tool and `TEST_INTEGRATION.py` failed at import. We fixed this.
 - `parser.show_line_for_paths` shells out to the undocumented external `yq` binary.
+- `parser.show_line_for_paths` read `key_jsonpath_mapping[key]` in a debug `print` *before* the code checked whether the key exists. When run on the project's own `TEST_ARTIFACTS`, the full scan crashed with `KeyError: 'Unconfined'`. CI exposed this; we fixed it with `.get(key)`.
+- Two Helm fixtures (`helm.values.yaml`, `helm.stackgres.yaml`) contained a real-format Grafana API key in a YAML comment, and GitHub push protection blocked the push. Because it was only in a comment, the scanner never saw it. We redacted it.
 - `TEST_GRAPH.py` and many `TEST_SCANNING.py` cases use hard-coded absolute paths from the original author's machine (`/Users/arahman/...`). As a result, 27/27 graph tests and 65/115 scanning tests error out.
 
 ## 2. Forensics (`forensics.py`)
