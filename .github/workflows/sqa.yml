@@ -1,0 +1,47 @@
+name: SQA - tests, fuzzing, forensics
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  sqa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install ruamel.yaml pandas numpy sarif-om jschema-to-python typer
+          yq --version   # mikefarah yq is preinstalled on ubuntu-latest; parser.py shells out to it
+
+      - name: Unit tests (parsing)
+        run: python TEST_PARSING.py
+
+      - name: Fuzzing (fuzz.py)
+        run: python fuzz.py 500
+
+      - name: Forensics - run SLI-KUBE on TEST_ARTIFACTS
+        run: |
+          python main.py TEST_ARTIFACTS > scan_stdout.txt
+          echo "forensic log lines: $(wc -l < forensics/slikube_forensics.log)"
+          tail -n 25 forensics/slikube_forensics.log
+
+      - name: Upload SQA evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sqa-evidence
+          path: |
+            fuzz_report.csv
+            forensics/slikube_forensics.log
+            TEST_ARTIFACTS/slikube_results.csv
+            SLIKUBE.sarif
+            scan_stdout.txt

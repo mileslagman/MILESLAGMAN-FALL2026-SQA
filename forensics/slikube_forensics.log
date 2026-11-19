@@ -1,0 +1,63 @@
+2026-11-18 19:44:22,125 | INFO | pid=17632 | user=Miles | main.main | SLI-KUBE invoked on directory: TEST_ARTIFACTS
+2026-11-18 19:44:22,126 | INFO | pid=17632 | user=Miles | scanner.runScanner | === scan started: TEST_ARTIFACTS ===
+2026-11-18 19:44:22,126 | INFO | pid=17632 | user=Miles | scanner.getYAMLFiles | searching for YAML files under: TEST_ARTIFACTS (exists=True)
+2026-11-18 19:44:22,135 | INFO | pid=17632 | user=Miles | scanner.getYAMLFiles | found 76 YAML file(s) under TEST_ARTIFACTS
+2026-11-18 19:44:22,136 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,151 | INFO | pid=17632 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,153 | INFO | pid=17632 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,154 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,154 | INFO | pid=17632 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=True for TEST_ARTIFACTS\absent.default1.yaml (5 keys)
+2026-11-18 19:44:22,154 | INFO | pid=17632 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,156 | INFO | pid=17632 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,156 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,158 | INFO | pid=17632 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,160 | INFO | pid=17632 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,160 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,160 | INFO | pid=17632 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=True for TEST_ARTIFACTS\absent.default1.yaml (5 keys)
+2026-11-18 19:44:22,161 | INFO | pid=17632 | user=Miles | scanner.scanSingleManifest | taint-tracking secrets in manifest: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,161 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,163 | INFO | pid=17632 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,166 | INFO | pid=17632 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,166 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,166 | INFO | pid=17632 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=True for TEST_ARTIFACTS\absent.default1.yaml (5 keys)
+2026-11-18 19:44:22,166 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,169 | INFO | pid=17632 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,171 | INFO | pid=17632 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,171 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,171 | INFO | pid=17632 | user=Miles | scanner.scanSingleManifest | manifest TEST_ARTIFACTS\absent.default1.yaml: 3 secret finding(s), 0 template match(es), 0 taint(s)
+2026-11-18 19:44:22,172 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,173 | INFO | pid=17632 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,176 | INFO | pid=17632 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,176 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,176 | INFO | pid=17632 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=True for TEST_ARTIFACTS\absent.default1.yaml (5 keys)
+2026-11-18 19:44:22,176 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,178 | INFO | pid=17632 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,180 | INFO | pid=17632 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,181 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,181 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,183 | INFO | pid=17632 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,186 | INFO | pid=17632 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,186 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,186 | INFO | pid=17632 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=True for TEST_ARTIFACTS\absent.default1.yaml (5 keys)
+2026-11-18 19:44:22,186 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,188 | INFO | pid=17632 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,190 | INFO | pid=17632 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,190 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,190 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,192 | INFO | pid=17632 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,194 | INFO | pid=17632 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,194 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,194 | INFO | pid=17632 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=True for TEST_ARTIFACTS\absent.default1.yaml (5 keys)
+2026-11-18 19:44:22,194 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,197 | INFO | pid=17632 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,199 | INFO | pid=17632 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,200 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,200 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,202 | INFO | pid=17632 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,204 | INFO | pid=17632 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,204 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,204 | INFO | pid=17632 | user=Miles | parser.checkIfValidK8SYaml | valid Kubernetes manifest=True for TEST_ARTIFACTS\absent.default1.yaml (5 keys)
+2026-11-18 19:44:22,204 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loading YAML documents: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,206 | INFO | pid=17632 | user=Miles | parser.checkParseError | checking parse errors: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,208 | INFO | pid=17632 | user=Miles | parser.checkParseError | parse OK: TEST_ARTIFACTS\absent.default1.yaml
+2026-11-18 19:44:22,208 | INFO | pid=17632 | user=Miles | parser.loadMultiYAML | loaded 1 YAML document(s) from TEST_ARTIFACTS\absent.default1.yaml

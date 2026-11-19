@@ -1,0 +1,71 @@
+method,exception,message,count,traceback
+graphtaint.constructHelmString,TypeError,"can only concatenate str (not ""list"") to str",221,"Traceback (most recent call last):
+  File ""C:\Users\Miles\Desktop\COMP 6710\SQAGROUPPROJECT\slikube_src\KubeSec-master\fuzz.py"", line 135, in t_constructHelmString
+    graphtaint.constructHelmString(rand_hiera())
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\Miles\Desktop\COMP 6710\SQAGROUPPROJECT\slikube_src\KubeSec-master\graphtaint.py"", line 25, in constructHelmString
+    str2ret =   constants.DOT_SYMBOL +  constants.HELM_VALUE_KW + constants.DOT_SYMBOL + upper_key + constants.DOT_SYMBOL + key
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: can only concatenate str (not ""list"") to str
+"
+graphtaint.constructHelmString,ValueError,"not enough values to unpack (expected 3, got 1)",144,"Traceback (most recent call last):
+  File ""C:\Users\Miles\Desktop\COMP 6710\SQAGROUPPROJECT\slikube_src\KubeSec-master\fuzz.py"", line 135, in t_constructHelmString
+    graphtaint.constructHelmString(rand_hiera())
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\Miles\Desktop\COMP 6710\SQAGROUPPROJECT\slikube_src\KubeSec-master\graphtaint.py"", line 23, in constructHelmString
+    upper_key, key, _ = hiera_tuple
+    ^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 1)
+"
+graphtaint.getValidTaints,AttributeError,'list' object has no attribute 'split',33,"Traceback (most recent call last):
+  File ""C:\Users\Miles\Desktop\COMP 6710\SQAGROUPPROJECT\slikube_src\KubeSec-master\fuzz.py"", line 139, in t_getValidTaints
+    graphtaint.getValidTaints(rand_tuple_list())
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Miles\Desktop\COMP 6710\SQAGROUPPROJECT\slikube_src\KubeSec-master\graphtaint.py"", line 62, in getValidTaints
+    inceptor = helm_string.split( constants.DOT_SYMBOL )[-1]
+               ^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'split'
+"
+graphtaint.getValidTaints,TypeError,'object' object is not iterable,96,"Traceback (most recent call last):
+  File ""C:\Users\Miles\Desktop\COMP 6710\SQAGROUPPROJECT\slikube_src\KubeSec-master\fuzz.py"", line 139, in t_getValidTaints
+    graphtaint.getValidTaints(rand_tuple_list())
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Miles\Desktop\COMP 6710\SQAGROUPPROJECT\slikube_src\KubeSec-master\graphtaint.py"", line 60, in getValidTaints
+    for match in lis_template_matches:
+                 ^^^^^^^^^^^^^^^^^^^^
+TypeError: 'object' object is not iterable
+"
+graphtaint.getValidTaints,ValueError,too many values to unpack (expected 2),185,"Traceback (most recent call last):
+  File ""C:\Users\Miles\Desktop\COMP 6710\SQAGROUPPROJECT\slikube_src\KubeSec-master\fuzz.py"", line 139, in t_getValidTaints
+    graphtaint.getValidTaints(rand_tuple_list())
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Miles\Desktop\COMP 6710\SQAGROUPPROJECT\slikube_src\KubeSec-master\graphtaint.py"", line 61, in getValidTaints
+    script_name, helm_string = match
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+"
+parser.checkIfWeirdYAML,TypeError,argument of type 'object' is not iterable,288,"Traceback (most recent call last):
+  File ""C:\Users\Miles\Desktop\COMP 6710\SQAGROUPPROJECT\slikube_src\KubeSec-master\parser.py"", line 29, in checkIfWeirdYAML
+    if ( any(x_ in yaml_script for x_ in constants.WEIRD_PATHS  ) ):
+         ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Miles\Desktop\COMP 6710\SQAGROUPPROJECT\slikube_src\KubeSec-master\parser.py"", line 29, in <genexpr>
+    if ( any(x_ in yaml_script for x_ in constants.WEIRD_PATHS  ) ):
+             ^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'object' is not iterable
+"
+parser.loadMultiYAML,RecursionError,maximum recursion depth exceeded,40,"Traceback (most recent call last):
+  File ""<frozen _collections_abc>"", line 1035, in __iter__
+  File ""C:\Users\Miles\Desktop\COMP 6710\SQAGROUPPROJECT\.venv\Lib\site-packages\ruamel\yaml\compat.py"", line 192, in __getitem__
+    return self.__getsingleitem__(index)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+RecursionError: maximum recursion depth exceeded
+"
+parser.loadMultiYAML,TypeError,"expected string or bytes-like object, got 'NoneType'",1,"Traceback (most recent call last):
+  File ""C:\Users\Miles\Desktop\COMP 6710\SQAGROUPPROJECT\slikube_src\KubeSec-master\parser.py"", line 293, in find_json_path_keys
+    find_json_path_keys(value, parent_path=path, paths=paths)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Miles\Desktop\COMP 6710\SQAGROUPPROJECT\slikube_src\KubeSec-master\parser.py"", line 255, in find_json_path_keys
+    if regex_key_dot.match(key):
+       ~~~~~~~~~~~~~~~~~~~^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+"
