@@ -3,7 +3,7 @@
 **Team:** MILESLAGMAN (Miles Lagman)
 **Project:** SLI-KUBE / KubeSec, a static security scanner for Kubernetes manifests (from `slikube.zip`)
 
-> Status: progress draft (2026-11-18). Final version due Dec 01, 2026.
+> Status: near-final (2026-11-22). Screenshots still to be added; due Dec 01, 2026.
 
 ## 1. Fuzzing (`fuzz.py`)
 
@@ -63,7 +63,25 @@ GitHub Actions runs on every push, on pull requests, and on manual dispatch:
 5. Upload `fuzz_report.csv`, the forensic log, the CSV/SARIF results and the scan output as the `sqa-evidence` artifact.
 
 ## 4. Lessons learned
-_To be completed for the final report._
+
+**Fuzzing**
+- **Cheap random fuzzing still finds real bugs.** The fuzzer took a few hours to write and runs in seconds, yet it found two crashes reachable from ordinary YAML files: the self-referential anchor and the null key. For a security scanner these are serious, because anyone who controls a single file in the scanned repository can abort the whole scan and hide every other finding.
+- **Structure-aware inputs beat pure noise.** Random strings mostly exercised type checks, while the dict/list generator and the mutated YAML seeds reached the deeper parsing logic, which is where the more serious bugs were. Seeding the fuzzer with realistic inputs mattered more than raising the iteration count.
+- **Not every crash has the same weight.** Most crash signatures came from passing the wrong type to internal helpers such as `constructHelmString`. Those show that the code has no defensive checks, but normal callers never trigger them. Separating "reachable from user input" from "reachable only through API misuse" was needed to report the results honestly.
+- **A fixed seed makes results reproducible**, so a crash seen in CI can be reproduced locally and the report numbers stay stable between runs.
+
+**Forensics**
+- **Deciding what to log is a design decision.** The most useful entries record decisions the tool makes on its own: which files were skipped as invalid or "weird", what each file was classified as, and how many findings each manifest produced. Without these, a scan that reports zero problems is indistinguishable from a scan that silently skipped everything.
+- **Logs can leak secrets themselves.** `scanForSecrets` finds hard-coded passwords and tokens. Logging the values would copy those secrets into a log file that is uploaded as a CI artifact, so we log only the key names.
+- **A central logger keeps logging consistent.** Putting the format (time, PID, user, method) in one module kept the 10 instrumented methods short and their output uniform.
+
+**Continuous integration**
+- **CI finds problems that local runs hide.** The full scan worked well enough on our machine, but its first CI run crashed with a `KeyError` in `show_line_for_paths`. The clean environment also revealed an undocumented dependency: the code shells out to the external `yq` binary.
+- **Platform security checks are part of QA.** GitHub push protection blocked our first push because test fixtures contained a real-format API key. A tool meant to *detect* hard-coded secrets had shipped them in its own test data.
+- **Treat fuzz crashes as findings in CI.** We made `fuzz.py` exit 0 and upload its report, rather than fail the build, because the known bugs are documented rather than fixed. Otherwise every build would be red and real regressions would be harder to notice.
+
+**General**
+- **Inherited code has inherited debt.** Before any new QA work, the project could not even start (`main.py` had missing imports), and most of the existing test suite depended on files from the original author's computer. These tests looked like coverage but checked nothing on any other machine. Making the tests run anywhere is a prerequisite for every other QA activity.
 
 ## 5. Evidence / screenshots
 _To be added: screenshots of the Actions runs, the fuzz output and the forensic log._
