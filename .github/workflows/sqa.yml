@@ -28,11 +28,32 @@ jobs:
       - name: Fuzzing (fuzz.py)
         run: python fuzz.py 500
 
-      - name: Forensics - run SLI-KUBE on TEST_ARTIFACTS
+      # Start a fresh log so the forensic evidence covers the scans only.
+      # SQA_FIXTURES is a small Helm chart: TEST_ARTIFACTS has no templates/ folder,
+      # so without it the Helm template methods never run.
+      - name: Forensics - run SLI-KUBE on SQA_FIXTURES and TEST_ARTIFACTS
         run: |
-          python main.py TEST_ARTIFACTS > scan_stdout.txt
+          rm -f forensics/slikube_forensics.log
+          python main.py SQA_FIXTURES > scan_stdout.txt
+          python main.py TEST_ARTIFACTS >> scan_stdout.txt
           echo "forensic log lines: $(wc -l < forensics/slikube_forensics.log)"
           tail -n 25 forensics/slikube_forensics.log
+
+      - name: Forensics - check that all 10 methods logged
+        run: |
+          missing=0
+          for m in parser.readYAMLAsStr parser.checkParseError parser.loadMultiYAML \
+                   parser.checkIfValidK8SYaml scanner.getYAMLFiles scanner.scanForSecrets \
+                   scanner.scanSingleManifest scanner.runScanner \
+                   graphtaint.getHelmTemplateContent main.main; do
+            n=$(grep -cF "| $m |" forensics/slikube_forensics.log || true)
+            echo "$m: $n log lines"
+            [ "$n" -gt 0 ] || missing=1
+          done
+          if grep -q "not-a-real-password-demo" forensics/slikube_forensics.log; then
+            echo "secret value leaked into the forensic log"; exit 1
+          fi
+          exit $missing
 
       - name: Upload SQA evidence
         if: always()

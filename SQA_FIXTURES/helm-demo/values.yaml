@@ -1,0 +1,3 @@
+# Demo Helm chart for the forensics CI step. All values are fake.
+database:
+  password: not-a-real-password-demo
