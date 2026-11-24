@@ -3,8 +3,6 @@
 **Team:** MILESLAGMAN (Miles Lagman)
 **Project:** SLI-KUBE / KubeSec, a static security scanner for Kubernetes manifests (from `slikube.zip`)
 
-> Status: screenshots still to be added; due Dec 01, 2026.
-
 ## 1. Fuzzing (`fuzz.py`)
 
 `fuzz.py` fuzzes 10 methods with random and mutated inputs. It uses a fixed seed (6710) so runs are reproducible, and it runs 500 inputs per method by default. Inputs include special strings (empty, NUL, 10k chars, path traversal, format strings, Unicode), random scalars of every type, random nested dict/list structures that look like parsed YAML, and mutated or random-byte YAML files. Each exception is grouped by method and exception type and written to `fuzz_report.csv`. A crash in a fuzzed method does not fail the script, so CI can upload the report; crashes are treated as findings. A copy of the report from CI is in `evidence/fuzz_report.csv`.
@@ -89,4 +87,22 @@ GitHub Actions runs on every push, on pull requests, and on manual dispatch:
 - **Inherited code has inherited debt.** Before any new QA work, the project could not even start (`main.py` had missing imports), and most of the existing test suite depended on files from the original author's computer. Those tests check nothing on any other machine. Making the tests run anywhere is a prerequisite for every other QA activity.
 
 ## 5. Evidence / screenshots
-_To be added: screenshots of the Actions runs, the fuzz output and the forensic log._
+The screenshots are from GitHub Actions run #8 (commit `d4bcdf0`). The files in `evidence/` were saved from the previous run (commit `d404c3a`), which ran the same code, so their timestamps differ.
+
+**Continuous integration:** successful run with the uploaded `sqa-evidence` artifact.
+
+![GitHub Actions run summary](screenshots/ci-run.png)
+
+**Fuzzing:** `fuzz.py` output in CI, with 10 methods and 8 distinct crash signatures.
+
+![Fuzzing output](screenshots/fuzzing.png)
+
+**Forensics:** last lines of the forensic log from the scan.
+
+![Forensic log output](screenshots/forensics-log.png)
+
+**Forensics:** check that all 10 instrumented methods logged.
+
+![Forensic log check](screenshots/forensics-check.png)
+
+Full files: [forensic log](evidence/slikube_forensics.log), [fuzz report](evidence/fuzz_report.csv).
