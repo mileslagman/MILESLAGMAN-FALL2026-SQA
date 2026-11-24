@@ -1,0 +1,66 @@
+method,exception,message,count,traceback
+graphtaint.constructHelmString,TypeError,"can only concatenate str (not ""list"") to str",221,"Traceback (most recent call last):
+  File ""/home/runner/work/MILESLAGMAN-FALL2026-SQA/MILESLAGMAN-FALL2026-SQA/fuzz.py"", line 135, in t_constructHelmString
+    graphtaint.constructHelmString(rand_hiera())
+  File ""/home/runner/work/MILESLAGMAN-FALL2026-SQA/MILESLAGMAN-FALL2026-SQA/graphtaint.py"", line 26, in constructHelmString
+    str2ret =   constants.DOT_SYMBOL +  constants.HELM_VALUE_KW + constants.DOT_SYMBOL + upper_key + constants.DOT_SYMBOL + key
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: can only concatenate str (not ""list"") to str
+"
+graphtaint.constructHelmString,ValueError,"not enough values to unpack (expected 3, got 1)",144,"Traceback (most recent call last):
+  File ""/home/runner/work/MILESLAGMAN-FALL2026-SQA/MILESLAGMAN-FALL2026-SQA/fuzz.py"", line 135, in t_constructHelmString
+    graphtaint.constructHelmString(rand_hiera())
+  File ""/home/runner/work/MILESLAGMAN-FALL2026-SQA/MILESLAGMAN-FALL2026-SQA/graphtaint.py"", line 24, in constructHelmString
+    upper_key, key, _ = hiera_tuple
+    ^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 1)
+"
+graphtaint.getValidTaints,AttributeError,'list' object has no attribute 'split',33,"Traceback (most recent call last):
+  File ""/home/runner/work/MILESLAGMAN-FALL2026-SQA/MILESLAGMAN-FALL2026-SQA/fuzz.py"", line 139, in t_getValidTaints
+    graphtaint.getValidTaints(rand_tuple_list())
+  File ""/home/runner/work/MILESLAGMAN-FALL2026-SQA/MILESLAGMAN-FALL2026-SQA/graphtaint.py"", line 66, in getValidTaints
+    inceptor = helm_string.split( constants.DOT_SYMBOL )[-1]
+               ^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'split'
+"
+graphtaint.getValidTaints,TypeError,'object' object is not iterable,96,"Traceback (most recent call last):
+  File ""/home/runner/work/MILESLAGMAN-FALL2026-SQA/MILESLAGMAN-FALL2026-SQA/fuzz.py"", line 139, in t_getValidTaints
+    graphtaint.getValidTaints(rand_tuple_list())
+  File ""/home/runner/work/MILESLAGMAN-FALL2026-SQA/MILESLAGMAN-FALL2026-SQA/graphtaint.py"", line 64, in getValidTaints
+    for match in lis_template_matches:
+TypeError: 'object' object is not iterable
+"
+graphtaint.getValidTaints,ValueError,too many values to unpack (expected 2),185,"Traceback (most recent call last):
+  File ""/home/runner/work/MILESLAGMAN-FALL2026-SQA/MILESLAGMAN-FALL2026-SQA/fuzz.py"", line 139, in t_getValidTaints
+    graphtaint.getValidTaints(rand_tuple_list())
+  File ""/home/runner/work/MILESLAGMAN-FALL2026-SQA/MILESLAGMAN-FALL2026-SQA/graphtaint.py"", line 65, in getValidTaints
+    script_name, helm_string = match
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+"
+parser.checkIfWeirdYAML,TypeError,argument of type 'object' is not iterable,288,"Traceback (most recent call last):
+  File ""/home/runner/work/MILESLAGMAN-FALL2026-SQA/MILESLAGMAN-FALL2026-SQA/parser.py"", line 30, in checkIfWeirdYAML
+    if ( any(x_ in yaml_script for x_ in constants.WEIRD_PATHS  ) ):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/home/runner/work/MILESLAGMAN-FALL2026-SQA/MILESLAGMAN-FALL2026-SQA/parser.py"", line 30, in <genexpr>
+    if ( any(x_ in yaml_script for x_ in constants.WEIRD_PATHS  ) ):
+             ^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'object' is not iterable
+"
+parser.loadMultiYAML,RecursionError,maximum recursion depth exceeded while calling a Python object,40,"Traceback (most recent call last):
+  File ""/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/re/__init__.py"", line 227, in compile
+    return _compile(pattern, flags)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/re/__init__.py"", line 274, in _compile
+    if isinstance(flags, RegexFlag):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded while calling a Python object
+"
+parser.loadMultiYAML,TypeError,"expected string or bytes-like object, got 'NoneType'",1,"Traceback (most recent call last):
+  File ""/home/runner/work/MILESLAGMAN-FALL2026-SQA/MILESLAGMAN-FALL2026-SQA/parser.py"", line 310, in find_json_path_keys
+    find_json_path_keys(value, parent_path=path, paths=paths)
+  File ""/home/runner/work/MILESLAGMAN-FALL2026-SQA/MILESLAGMAN-FALL2026-SQA/parser.py"", line 272, in find_json_path_keys
+    if regex_key_dot.match(key):
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+"
